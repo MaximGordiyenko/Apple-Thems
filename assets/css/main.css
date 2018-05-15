@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-width: 900px;
+  font-family: Roboto, sans-serif;
+}
+nav {
+  width: 900px;
+  margin: 0 auto;
+  /*content by center*/
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*vertical align*/
+}
+nav img {
+  width: 28px;
+}
+nav img:hover {
+  transform: rotate(360deg);
+  transition: 2s;
+}
+nav ul {
+  list-style-type: none;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #c7c8c8;
+  padding-bottom: 8px;
+}
+nav ul li a:hover {
+  color: #4b4b4b;
+  border-bottom: 3px solid #818181;
+}
+nav ul li input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #818181;
+  padding-bottom: 10px;
+  font-size: 1em;
+  width: 170px;
+}
+nav ul li input::placeholder {
+  color: #818181;
+}
+header {
+  height: 460px;
+  background: url("../img/watches.png") no-repeat 100% 0;
+  /*100% to right, 0 from top*/
+  border-bottom: 1px solid #818181;
+}
+header .container {
+  width: 900px;
+  height: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+header .container .header-block h3 {
+  font-size: 30px;
+}
+header .container .header-block p {
+  width: 400px;
+  margin: 30px 0;
+  padding-left: 20px;
+  border-left: 1px solid #818181;
+  color: #818181;
+  line-height: 1.6em;
+  font-size: .9em;
+}
+header .container .header-block button {
+  background: #ea625c;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  padding: 8px 18px;
+  font-size: .9em;
+  text-transform: uppercase;
+}
+header .container .header-block button:hover {
+  opacity: .9;
+  cursor: pointer;
+}
+section {
+  padding: 20px 0;
+  width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+section > div {
+  width: 30%;
+}
+section > div h3 {
+  color: #2f3849;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+section > div p {
+  line-height: 1.8em;
+}
+section > div a {
+  text-transform: uppercase;
+  color: #ea625c;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 70px;
+  position: relative;
+  transition: .5s;
+}
+section > div a:before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  background: #ea625c;
+  position: absolute;
+  top: 50%;
+  left: -60px;
+  transition: .5s;
+}
+section > div a:hover:before {
+  width: 50px;
+}
+section > div a:hover {
+  margin-left: 100px;
+}
+main {
+  height: 650px;
+}
+main .container {
+  width: 900px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+main .container .head-block {
+  margin-right: 80px;
+}
+main .container .head-block h2 {
+  font-size: 30px;
+}
+main .container .head-block p {
+  width: 400px;
+  margin: 30px 0;
+  padding-left: 20px;
+  border-left: 1px solid #818181;
+  color: #818181;
+  line-height: 1.6em;
+  font-size: .9em;
+}
+main .container .head-block button {
+  background: #ea625c;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  padding: 8px 18px;
+  font-size: .9em;
+  text-transform: uppercase;
+}
+main .container .head-block button:hover {
+  opacity: .9;
+  cursor: pointer;
+}
+main .container img {
+  width: 400px;
+  height: 600px;
+}
+footer {
+  background: url("../img/runners.jpg") no-repeat;
+  background-size: cover;
+  height: 900px;
+}
+footer .head-block {
+  width: 400px;
+  position: relative;
+  top: 330px;
+  left: 800px;
+}
+footer .head-block h2 {
+  color: white;
+  font-size: 2em;
+}
+footer .head-block p {
+  width: 300px;
+  margin: 30px 0;
+  padding-left: 20px;
+  border-left: 1px solid #818181;
+  color: white;
+  line-height: 1.6em;
+  font-size: .9em;
+}
+footer .head-block button {
+  background: #ea625c;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  padding: 8px 18px;
+  font-size: .9em;
+  text-transform: uppercase;
+}
+footer .head-block button:hover {
+  opacity: .9;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */
