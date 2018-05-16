@@ -142,6 +142,20 @@ section > div a:hover:after {
 section > div span {
   color: #818181;
 }
+section > div span:before {
+  content: "\25A0";
+  display: inline-block;
+  margin-right: 5px;
+}
+section > div span:after {
+  content: "\25A0";
+  display: inline-block;
+  margin-left: 5px;
+}
+section > div span:hover {
+  margin-left: 20px;
+  transition: .5s;
+}
 main {
   height: 650px;
 }
