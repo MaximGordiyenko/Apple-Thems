@@ -1,3 +1,8 @@
+.pseudo-rule {
+  content: "\25A0";
+  display: inline-block;
+  margin-left: 5px;
+}
 * {
   box-sizing: border-box;
 }
@@ -107,6 +112,7 @@ section > div h3 {
 }
 section > div p {
   line-height: 1.8em;
+  text-align: justify;
 }
 section > div a {
   text-transform: uppercase;
@@ -140,11 +146,13 @@ section > div a:hover:after {
   margin-left: 30px;
 }
 section > div span {
-  color: #818181;
+  color: #ececec;
+  position: relative;
 }
 section > div span:before {
   content: "\25A0";
   display: inline-block;
+  margin-left: 5px;
   margin-right: 5px;
 }
 section > div span:after {
@@ -155,6 +163,7 @@ section > div span:after {
 section > div span:hover {
   margin-left: 20px;
   transition: .5s;
+  color: #ea625c;
 }
 main {
   height: 650px;

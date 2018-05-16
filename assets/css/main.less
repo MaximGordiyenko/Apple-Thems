@@ -1,17 +1,25 @@
 @link: #818181;
 @bglink: #ea625c;
+@ml: 5px;
+@min-w: 900px;
+.pseudo-rule {
+    content: "\25A0";
+    display: inline-block;
+    margin-left: @ml;
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    min-width: 900px;
+    min-width: @min-w;
     font-family: Roboto, sans-serif;
 }
 
 nav {
-    width: 900px;
+    width: @min-w;
     margin: 0 auto; /*content by center*/
     padding: 50px 0;
     display: flex;
@@ -58,7 +66,7 @@ header {
     background: url("../img/watches.png") no-repeat 100% 0; /*100% to right, 0 from top*/
     border-bottom: 2px solid #ececec;
     .container {
-        width: 900px;
+        width: @min-w;
         height: 90%;
         margin: 0 auto;
         display: flex;
@@ -96,7 +104,7 @@ header {
 
 section {
     padding: 20px 0;
-    width: 900px;
+    width: @min-w;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -110,6 +118,7 @@ section {
         }
         p {
             line-height: 1.8em;
+            text-align: justify;
         }
         a {
             text-transform: uppercase;
@@ -143,21 +152,19 @@ section {
             }
         }
         span {
-            color: @link;
+            color: #ececec;
+            position: relative;
             &:before {
-                content: "\25A0";
-                display: inline-block;
+                .pseudo-rule;
                 margin-right: 5px;
-
             }
             &:after {
-                content: "\25A0";
-                display: inline-block;
-                margin-left: 5px;
+                .pseudo-rule;
             }
             &:hover {
                 margin-left: 20px;
                 transition: .5s;
+                color: @bglink;
             }
         }
     }
@@ -166,7 +173,7 @@ section {
 main {
     height: 650px;
     .container {
-        width: 900px;
+        width: @min-w;
         height: 100%;
         margin: 0 auto;
         display: flex;
@@ -210,7 +217,7 @@ main {
 footer {
     background: url("../img/runners.jpg") no-repeat;
     background-size: cover;
-    height: 900px;
+    height: @min-w;
     .head-block {
         width: 400px;
         position: relative;
