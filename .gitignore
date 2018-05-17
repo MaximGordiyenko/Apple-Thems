@@ -1,2 +1,5 @@
-.gitignore
 .idea
+.gitignore
+assets/css/media.css.map
+assets/css/main.css.map
+assets/design

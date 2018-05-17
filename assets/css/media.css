@@ -1,0 +1,55 @@
+@media only screen and (max-width: 898px) {
+  nav {
+    display: block;
+  }
+  nav img {
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+  }
+  nav ul li:first-child {
+    margin-left: 100px;
+  }
+  nav ul li:last-child {
+    margin-left: 190px;
+  }
+  header {
+    background: url("../img/watches.jpg") no-repeat 80% 0;
+    background-size: cover;
+  }
+  header .container .header-block {
+    margin: 0 auto;
+  }
+  header .container .header-block h3 {
+    color: white;
+  }
+  header .container .header-block p {
+    color: white;
+  }
+  section {
+    flex-direction: column;
+  }
+  section div {
+    margin: 0 auto;
+    width: 50%;
+  }
+  main {
+    height: 450px;
+  }
+  main .container .head-block {
+    margin: 0 auto;
+  }
+  main .container .head-block p {
+    width: 450px;
+  }
+  main .container img {
+    display: none;
+  }
+  footer {
+    overflow: hidden;
+  }
+  footer .container .head-block {
+    left: 225px;
+  }
+}
+/*# sourceMappingURL=media.css.map */

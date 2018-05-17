@@ -66,7 +66,6 @@ header .container {
   height: 90%;
   margin: 0 auto;
   display: flex;
-  align-items: center;
 }
 header .container .header-block h3 {
   font-size: 30px;
@@ -176,7 +175,7 @@ main .container {
   align-items: center;
 }
 main .container .head-block {
-  margin-right: 80px;
+  margin-right: 100px;
 }
 main .container .head-block h2 {
   font-size: 30px;
@@ -212,27 +211,32 @@ footer {
   background: url("../img/runners.jpg") no-repeat;
   background-size: cover;
   height: 900px;
+  width: 100%;
 }
-footer .head-block {
-  width: 400px;
+footer .container {
+  width: 900px;
+  margin: 0 auto;
+  display: flex;
+}
+footer .container .head-block {
   position: relative;
-  top: 330px;
-  left: 800px;
+  top: 285px;
+  left: 500px;
 }
-footer .head-block h2 {
+footer .container .head-block h2 {
   color: white;
-  font-size: 2em;
+  font-size: 2.3em;
 }
-footer .head-block p {
-  width: 300px;
+footer .container .head-block p {
+  width: 400px;
   margin: 30px 0;
   padding-left: 20px;
   border-left: 2px solid white;
   color: white;
   line-height: 1.6em;
-  font-size: .9em;
+  font-size: 1em;
 }
-footer .head-block button {
+footer .container .head-block button {
   background: #ea625c;
   color: #ffffff;
   outline: none;
@@ -242,7 +246,7 @@ footer .head-block button {
   text-transform: uppercase;
   opacity: .9;
 }
-footer .head-block button:hover {
+footer .container .head-block button:hover {
   opacity: 1;
   cursor: pointer;
 }
